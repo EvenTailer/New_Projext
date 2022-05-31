@@ -1,0 +1,491 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  padding: 33px 0 58px 0;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.03) 2.5%,
+      rgba(27, 30, 34, 0.4) 42.42%,
+      #1b1e22 80.67%
+    ),
+    url(../img/carinforest.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1135px;
+  margin: auto;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.menu__links a {
+  text-decoration: none;
+  margin-left: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+}
+.menu__links a:hover {
+  border: 1px solid #ffb800;
+  border-radius: 10px;
+  padding: 15px 25px;
+}
+
+.center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 205px;
+}
+.center__column1 h1 {
+  max-width: 582px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+  color: #ffffff;
+  margin-bottom: 26px;
+}
+.center__column1 p {
+  max-width: 474px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 38px;
+  color: #ffffff;
+}
+.center__column2 {
+  max-width: 500px;
+  background: rgba(51, 51, 51, 0.25);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  padding: 50px 70px;
+  margin-right: -70px;
+}
+.center__column2 h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 23px;
+}
+input {
+  background: rgba(51, 51, 51, 0.25);
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  padding: 5px 0 5px 5px;
+}
+input::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ffffff;
+}
+input:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #bdbdbd;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+.center__form1 input {
+  display: inline-block;
+  width: 360px;
+  margin-bottom: 22px;
+}
+label {
+  display: flex;
+  justify-content: space-between;
+}
+.center__form2 input {
+  display: inline-block;
+  width: 168px;
+  margin-bottom: 22px;
+}
+option {
+  background: #1b1e22;
+}
+select {
+  background: rgba(51, 51, 51, 0.25);
+  width: 360px;
+  padding: 5px 0 5px 5px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  margin-bottom: 22px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.tipe-tour__button {
+  text-align: center;
+  border: none;
+  background-color: #ffb800;
+  border-radius: 4px;
+  padding: 5px 145px;
+}
+.tipe-tour__button a {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+}
+.end__myself {
+  display: flex;
+  justify-content: space-between;
+}
+.end__visa,
+.end__world,
+.end__hanter,
+.end__coffe {
+  text-align: center;
+  max-width: 264px;
+}
+.end__myself p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-top: 17px;
+}
+.end h2 {
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 38px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.tours {
+  background: #1b1e22;
+}
+.tours__choice {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.tours__header {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 38px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.turs-camp__price {
+  max-width: 362px;
+  margin-bottom: 20px;
+}
+.tours-wrraper__img {
+  position: relative;
+  overflow: hidden;
+  overflow: auto;
+}
+.tours__img {
+  position: relative;
+}
+.tours__img img {
+  max-width: 362px;
+}
+.tours__price {
+  position: absolute;
+  bottom: 30px;
+  left: -300px;
+  transition: 0.5s;
+}
+.turs-camp__price:hover {
+  transform: scale(1.1);
+  transition: 1.5s;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+}
+.turs-camp__price:hover .tours__price {
+  left: 0;
+}
+.tours-description {
+  padding: 20px;
+}
+.description__h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.description__p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.description__a {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.turs-camp__price:hover .tours-description {
+  background-color: #ffffff;
+}
+.turs-camp__price:hover .description__h3 {
+  color: #333333;
+}
+.turs-camp__price:hover .description__p {
+  color: #333333;
+}
+.turs-camp__price:hover .description__a {
+  color: #000000;
+  opacity: 0.5;
+}
+.tours__button {
+  display: flex;
+  justify-content: center;
+}
+.tours__button .button__a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  border: 1px solid #ffb800;
+  border-radius: 4px;
+  padding: 15px 37px;
+}
+.tours__button .button__a:hover {
+  background-color: #ffb800;
+  color: #000000;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.75);
+}
+.tours__button {
+  padding-bottom: 41px;
+}
+.our-company {
+  background: url(../img/asedfsegfs.png), url(../img/rock.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 59px 0 68px;
+}
+.our-company__possibilities {
+  display: flex;
+  justify-content: space-evenly;
+}
+.our-company__work {
+  text-align: center;
+}
+.our-company__work h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 78px;
+  line-height: 58px;
+  color: #ffb800;
+  margin-bottom: 23px;
+}
+.our-company__work p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.our-blog {
+  padding: 65px 0;
+}
+.our-blog__place {
+  position: relative;
+  overflow: hidden;
+  max-width: 552px;
+}
+.place__img {
+  position: relative;
+}
+.place__text {
+  position: absolute;
+  transition: 3.5s;
+}
+.our-blog__place:hover img {
+  filter: brightness(40%);
+}
+.our-blog__place:hover .place__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 38px;
+  text-align: center;
+  color: #ffffff;
+  bottom: 250px;
+  max-width: 552px;
+}
+.our-blog__wrraper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.our-blog__tourist {
+  display: flex;
+  justify-content: space-between;
+  max-width: 50%;
+}
+.tourist__col1 {
+  background: #23282f;
+  max-width: 264px;
+  margin: 0 20px;
+}
+.tourist__about {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.tourist__about h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  flex-basis: 30%;
+}
+.tourist__about p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+}
+.about__footer {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+.about__footer p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.bassis {
+  flex-basis: 1;
+}
+.fa-comments:hover {
+  color: #ffb800;
+}
+.fa-heart:hover {
+  color: #ffb800;
+}
+.footer__end {
+  background-color: #1b1e22;
+  background-image: url(../img/last.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.end__reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 924px;
+  margin: auto;
+  padding-bottom: 61px;
+}
+.end__reviews h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 38px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.end__reviews p {
+  margin-top: 30px;
+  margin-bottom: 6px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+}
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.footer__contacts span {
+  display: inline;
+}
+.footer__contacts p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ffb800;
+}
+.footer__contacts span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.footer__contacts i {
+  margin: 0 10px;
+  font-size: 17px;
+}
+.footer__number {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
