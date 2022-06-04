@@ -20,15 +20,19 @@ header {
   max-width: 1135px;
   margin: auto;
 }
+
 .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 80px;
 }
+.menu__burger {
+  display: none;
+}
 .menu__links a {
   text-decoration: none;
-  margin-left: 20px;
+  padding: 20px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -37,9 +41,11 @@ header {
   color: #ffffff;
 }
 .menu__links a:hover {
-  border: 1px solid #ffb800;
+  color: #000000;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
-  padding: 15px 25px;
+  background-color: #ffb800;
+  font-weight: 500;
 }
 
 .center {
@@ -346,12 +352,12 @@ select {
 }
 .place__text {
   position: absolute;
-  transition: 3.5s;
 }
 .our-blog__place:hover img {
   filter: brightness(40%);
+  transition: 1.5s;
 }
-.our-blog__place:hover .place__text {
+.place__text p {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -359,8 +365,11 @@ select {
   line-height: 38px;
   text-align: center;
   color: #ffffff;
-  bottom: 250px;
   max-width: 552px;
+  transition: 1.5s;
+}
+.our-blog__place:hover .place__text {
+  bottom: 250px;
 }
 .our-blog__wrraper {
   display: flex;
@@ -391,7 +400,7 @@ select {
   line-height: 24px;
   color: #ffffff;
   margin-bottom: 10px;
-  flex-basis: 30%;
+  flex-basis: 75px;
 }
 .tourist__about p {
   font-family: "Montserrat";
@@ -400,9 +409,11 @@ select {
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
+  flex-basis: 1;
+  margin-bottom: 5px;
 }
 .about__footer {
-  flex-basis: 20%;
+  flex-basis: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -488,4 +499,87 @@ select {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+@media (max-width: 1135px) {
+  .container {
+    max-width: 95%;
+  }
+}
+@media (max-width: 1362px) {
+  .center__column2 {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 1200px) {
+  .our-blog__wrraper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .our-blog__tourist {
+    justify-content: center;
+  }
+}
+@media (max-width: 894px) {
+  .tours__price {
+    left: 0;
+  }
+  .menu__burger {
+    display: inline-block;
+  }
+  .menu__links {
+    display: none;
+  }
+  .center {
+    flex-direction: column;
+    align-items: center;
+  }
+  .center__column1 p {
+    margin: auto;
+    text-align: center;
+  }
+  .center__header {
+    text-align: center;
+  }
+  .center__column1 {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 760px) {
+  .end__myself {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tours__choice {
+    justify-content: center;
+  }
+  .our-company__possibilities {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .our-company__work {
+    margin: 15px;
+  }
+  .footer__contacts {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+  }
+  .footer__e-mail,
+  .footer__number,
+  .footer__messengers {
+    margin: 20px;
+  }
+  .place__img img {
+    max-width: 320px;
+  }
+  .our-blog__tourist {
+    flex-wrap: wrap;
+  }
+  .tourist__col1 {
+    margin: 10px;
+  }
+  .center__column2 {
+    max-width: 500px;
+  }
 }
