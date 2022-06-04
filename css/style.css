@@ -580,6 +580,21 @@ select {
     margin: 10px;
   }
   .center__column2 {
-    max-width: 500px;
+    max-width: 300px;
+  }
+  .center__form1 input {
+    max-width: 200px;
+  }
+  .tipe-tour__button {
+    padding: 5px 50px;
+  }
+  select {
+    width: 200px;
+  }
+  label {
+    flex-direction: column;
+  }
+  label input {
+    display: block;
   }
 }
